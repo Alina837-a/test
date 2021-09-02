@@ -1,0 +1,132 @@
+.information__container {
+  background-color: #ffffff;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 38px;
+  }
+}
+
+.information__list {
+  font-family: "Montserrat Bold", sans-serif;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+.information__item {
+  font-size: 20px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+.information__item--current {
+  position: relative;
+  margin-right: 29px;
+  color: #a61744;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 71px;
+  }
+}
+
+.information__item--current::after {
+  position: absolute;
+  content: "";
+  height: 7px;
+  top: 31px;
+  left: -2px;
+  right: -9px;
+  background-color: #a61744;
+
+  @media (min-width: @tablet-width) {
+    top: 35px;
+  }
+}
+
+.information__inf {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+
+.information__inf--1 {
+  order: 2;
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    padding-top: 58px;
+    padding-bottom: 148px;
+  }
+}
+
+.information__title {
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  color: #d0ae85;
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 44px;
+    line-height: 48px;
+    margin-bottom: 31px;
+  }
+}
+
+.information__quarter {
+  width: 100%;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    margin-bottom: 0;
+  }
+}
+
+.information__subtitle {
+  font-family: "Monsterrat Light", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.information__subtitle:nth-child(2) {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-bottom: 33px;
+  }
+}

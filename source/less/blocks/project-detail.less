@@ -1,0 +1,88 @@
+.project-detail {
+  padding-top: 23px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  color: #101010;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 35px;
+  }
+}
+
+.project-detail__complex {
+  font-family: "Monsterrat Light", sans-serif;
+  font-size: 22px;
+  padding-bottom: 9px;
+  font-weight: 300;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+  }
+}
+
+.project-detail__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.project-detail__new {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 34px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 24px;
+    padding-top: 10px;
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+
+.project-detail__link {
+  position: relative;
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  background-color: #cb2323;
+  width: 138px;
+  padding: 4px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+
+  @media (min-width: @tablet-width) {
+    font-family: "Monsterrat Light", sans-serif;
+    font-weight: 300;
+    width: 178px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    height: 36px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.project-detail__link::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-image: url(../../img/vector.svg);
+  right: 10px;
+  top: 8px;
+}

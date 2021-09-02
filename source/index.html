@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Жилой комплекс: Новые Котельники</title>
   </head>
   <body class="page-body">
-    <header class="page-header page-header--nojs">
-      <div class="container page-header__menu row">
-        <div class="page-header__wrapper col-7">
-          <div class="row">
-            <a class="page-header__logo col" href="./index.html">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="container page-header__menu-burger page-header__menu-burger--nojs  page-header__menu-burger--closed">
+          <div class="page-header__wrapper--logo">
+            <a class="page-header__logo" href="./index.html">
               <img class="page-header__logo-mobile" src="img/logo-mobile.svg" alt="Логотип компании Русич">
               <img class="page-header__logo-desktop" src="img/logo-dekstop.svg" alt="Логотип компании Русич">
             </a>
-            <p class="page-header__slogan col">Девелепмент, проектирование, строительство, эксплуатация</p>
+            <p class="page-header__slogan">Девелепмент, проектирование, строительство, эксплуатация</p>
           </div>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs col-5">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link">
                 О компании
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">
                 Проекты
               </a>
             </li>
@@ -46,7 +48,7 @@
                 Новости
               </a>
             </li>
-        </ul>
+          </ul>
         </nav>
       </div>
     </header>
@@ -59,38 +61,34 @@
           <div class="project__banner">
             <picture>
               <source media="(min-width: 1680px)" srcset="img/banner-desktop@1x.jpg 1x, img/banner-desktop@2x.jpg 2x">
-              <source media="(min-width: 780px)" srcset="img/banner-tablet@1x.jpg 1x, img/banner-tablet@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/banner-tablet@1x.jpg 1x, img/banner-tablet@2x.jpg 2x">
               <img src="img/banner-mobile@1x.jpg" srcset="img/banner-mobile@2x.jpg" alt="Панорма комплекса">
             </picture>
           </div>
           <div class="project__sign">
            <picture>
-             <source media="(min-width: 1680px)" srcset="img/quarter-dekstop.png">
+             <source media="(min-width: 768px)" srcset="img/quarter-dekstop.png">
              <img src="img/quarter-mobile.png" alt="Новые Котельники">
            </picture>
           </div>
         </div>
       </section>
-      <section class="project_detail">
+      <section class="project-detail">
         <div class="container">
-          <h2>Жилой комплекс</h2>
-          <ul class="project_detail__list">
-            <li class="project_detail__item">
-              Новые котельники
-            </li>
-            <li class="project_detail__item">
-              <a class="project_detail__link">
-                Идут продажи
-              </a>
-            </li>
-          </ul>
+          <h2 class="project-detail__complex">Жилой комплекс</h2>
+          <div class="project-detail__list">
+            <p class="project-detail__new">Новые котельники</p>
+            <a class="project-detail__link">
+              Идут продажи
+            </a>
+          </div>
         </div>
       </section>
       <section class="information">
         <h2 class="visually-hidden">Информация о квартале</h2>
-        <div class="container">
+        <div class="container information__container">
           <ul class="information__list">
-            <li class="information__item--current">
+            <li class="information__item information__item--current">
               О проекте
             </li>
             <li class="information__item">
@@ -98,8 +96,8 @@
             </li>
           </ul>
         </div>
-        <div>
-          <div class="container">
+        <div class="information__inf">
+          <div class="container information__inf--1">
             <h2 class="information__title">О проекте</h2>
             <p class="information__subtitle">Строительство Квартала «Новые Котельники» предусматривает 3 очереди строительства: 14 домов переменной этажности высотой от 13 до 25 этажей, 4 детских сада общей вместимостью 630 детей, школу на 1500 мест, медицинский центр, многофункциональный административный комплекс, а также подземные и наземные паркинги.</p>
             <p class="information__subtitle">Строительство Квартала «Новые Котельники» предусматривает 3 очереди строительства: 14 домов переменной этажности высотой от 13 до 25 этажей, 4 детских сада общей вместимостью 630 детей, школу на 1500 мест, медицинский центр, многофункциональный административный комплекс, а также подземные и наземные паркинги.</p>
@@ -107,38 +105,38 @@
           <div class="information__quarter">
             <picture>
               <source media="(min-width: 1680px)" srcset="img/project-desktop@1x.jpg 1x, img/project-desktop@2x.jpg 2x">
-              <source media="(min-width: 780px)" srcset="img/project-tablet@1x.jpg 1x, img/project-tablet@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/project-tablet@1x.jpg 1x, img/project-tablet@2x.jpg 2x">
               <img src="img/project-mobile@1x.jpg" srcset="img/project-mobile@2x.jpg" alt="Вид комплекса">
             </picture>
           </div>
         </div>
       </section>
-      <section class="lacation">
+      <section class="location">
         <h2 class="visually-hidden">Расположение</h2>
-        <div class="container">
-          <div class="lacation__park">
+        <div class="container location__container">
+          <div class="location__park">
             <picture>
-              <source media="(min-width: 1680px)" srcset="img/location-desktop@1x.jpg 1x, img/project-desktop@2x.jpg 2x">
+              <source media="(min-width: 1680px)" srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
               <img src="img/location-tablet@1x.jpg" srcset="img/location-tablet@2x.jpg" alt="Панорма комплекса">
             </picture>
+            <div class="location__construction">Cтроительство Индустриальнго парка «Холмогоры»</div>
           </div>
-          <div class="lacation__construction">Cтроительство Индустриальнго парка «Холмогоры»</div>
-        </div>
-        <div class="lacation__info">
-          <h2 class="lacation__title">Расположение</h2>
-          <p class="lacation__subtitle">
-            Квартал Квартал «Новые Котельники» строится в Подмосковье в 1,5 км от МКАД в сегменте «Комфорт +». Проект сочетает в себе все удобства городского проживания и уют тихой загородной жизни.
-          </p>
-          <p class="lacation__subtitle">
-            В жилом квартале «Новые Котельники» построят 4 детских сада на 630 мест и собственную школу на 1500 мест, так что маленькие жители смогут учиться рядом с домом.
-          </p>
-          <p class="lacation__subtitle">
-            Кроме того, жителям будет доступна инфраструктура соседних районов, где уже работают 3 школы, семь дошкольных общеобразовательных учреждений, детская школа искусств, промышленно-экономический техникум.
-          </p>
+          <div class="location__info">
+            <h2 class="location__title">Расположение</h2>
+            <p class="location__subtitle">
+              Квартал Квартал «Новые Котельники» строится в Подмосковье в 1,5 км от МКАД в сегменте «Комфорт +». Проект сочетает в себе все удобства городского проживания и уют тихой загородной жизни.
+            </p>
+            <p class="location__subtitle">
+              В жилом квартале «Новые Котельники» построят 4 детских сада на 630 мест и собственную школу на 1500 мест, так что маленькие жители смогут учиться рядом с домом.
+            </p>
+            <p class="location__subtitle">
+              Кроме того, жителям будет доступна инфраструктура соседних районов, где уже работают 3 школы, семь дошкольных общеобразовательных учреждений, детская школа искусств, промышленно-экономический техникум.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="contacts">
-        <div class="container">
+      <section class="container contacts">
+        <div class="contacts__container">
           <div class="contacts__adress--complex">
             <h3 class="contacts__title">Комплекс</h3>
             <p class="contacts__subtitle">г. Котельники, микрорайон «Южный», ул. Угрешская, напротив дома №6.</p>
@@ -150,45 +148,44 @@
                Машиностроителей, д. 19/2
             </p>
           </div>
-          <div class="contacts__place">
-            <img src="img/map.png"  alt="карта">
-          </div>
+        </div>
+        <div class="contacts__place">
+          <img src="img/map.png"  alt="карта">
         </div>
       </section>
-      <section class="infrastructure">
-        <div class="container">
-          <ul class="infrastructure__list">
-            <li class="infrastructure__item">
-              <a class="infrastructure__item--sberbank" href="https://www.sberbank.ru/ru/person">
-                <img src="img/sberbank.png" alt="Логотип Сбербанка">
-              </a>
-            </li>
-            <li class="infrastructure__item--">
-              <a class="infrastructure__item--auchan" href="https://www.auchan.ru/">
-              </a>
-            </li>
-            <li class="infrastructure__item">
-              <a class="infrastructure__item--mega" href="https://mega.ru/teplyi_stan/?utm_campaign=yandexmaps&utm_medium=banner&utm_source=yandexgeo">
-                <img src="img/mega.png" alt="Логотип ТЦ Мега">
-              </a>
-            </li>
-            <li class="infrastructure__item">
-              <a class="infrastructure__item--my-document" href="https://mega.ru/teplyi_stan/?utm_campaign=yandexmaps&utm_medium=banner&utm_source=yandexgeo">
-                <img src="img/my-document.png" alt="Логотип Мои документы">
-              </a>
-            </li>
-            <li class="infrastructure__item">
-              <a class="infrastructure__item--reestyle" href="https://parkfreestyle.ru/">
-                <img src="img/freestyle.png" alt="Логотип Freestyle Extreme Park">
-              </a>
-            </li>
-            <li class="infrastructure__item">
-              <a class="infrastructure__item--school" href="http://plavbas.penz.sportsng.ru/">
-                <img src="img/school.png" alt="Логотип спортивной школы">
-              </a>
-            </li>
-          </ul>
-        </div>
+      <section class="infrastructure container">
+        <ul class="infrastructure__list">
+          <li class="infrastructure__item infrastructure__item--sberbank">
+            <a class="infrastructure__link" href="https://www.sberbank.ru/ru/person">
+              <img src="img/sberbank.png" alt="Логотип Сбербанка">
+            </a>
+          </li>
+          <li class="infrastructure__item infrastructure__item--auchan">
+            <a class="infrastructure__link" href="https://www.auchan.ru/">
+              <img src="img/auchan.png" alt="Логотип Ашана">
+            </a>
+          </li>
+          <li class="infrastructure__item infrastructure__item--mega">
+            <a class="infrastructure__link" href="https://mega.ru/teplyi_stan/?utm_campaign=yandexmaps&utm_medium=banner&utm_source=yandexgeo">
+              <img src="img/mega.png" alt="Логотип ТЦ Мега">
+            </a>
+          </li>
+          <li class="infrastructure__item infrastructure__item--my-document">
+            <a class="infrastructure__link" href="https://mega.ru/teplyi_stan/?utm_campaign=yandexmaps&utm_medium=banner&utm_source=yandexgeo">
+              <img src="img/my-document.png" alt="Логотип Мои документы">
+            </a>
+          </li>
+          <li class="infrastructure__item infrastructure__item--reestyle">
+            <a class="infrastructure__link" href="https://parkfreestyle.ru/">
+              <img src="img/freestyle.png" alt="Логотип Freestyle Extreme Park">
+            </a>
+          </li>
+          <li class="infrastructure__item infrastructure__item--school">
+            <a class="infrastructure__link" href="http://plavbas.penz.sportsng.ru/">
+              <img src="img/school.png" alt="Логотип спортивной школы">
+            </a>
+          </li>
+        </ul>
         <div class="infrastructure__place">
           <h3 class="infrastructure__title">Места поблизости</h3>
           <p class="infrastructure__subtitle">
@@ -237,5 +234,6 @@
         <p class="page-footer__company">© «Русич» ,2018</p>
         <a class="page-footer__copyright">Создание сайта — Individ</a>
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

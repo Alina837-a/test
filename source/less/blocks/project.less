@@ -1,3 +1,22 @@
+.project {
+  position: relative;
+}
+
 .project__banner {
   width: 100%;
+}
+
+.project__sign {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  height: 73px;
+  width: 214px;
+
+  @media (min-width: @tablet-width) {
+    bottom: 34px;
+    left: 34px;
+    width: 313px;
+    height: 108px;
+  }
 }
