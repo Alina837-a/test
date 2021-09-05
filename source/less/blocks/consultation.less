@@ -1,7 +1,33 @@
 .consultation {
-  padding-top: 61px;
-  padding-bottom: 95px;
-  padding-left: 135px;
+  position: relative;
+}
+
+.consultation::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/union5.svg);
+  right: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 248px;
+  z-index: -1;
+}
+
+.consultation__container {
+  padding: 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 61px;
+    padding-bottom: 95px;
+    padding-left: 181px;
+    padding-right: 180px;
+  }
 }
 
 .consultation__title {
@@ -9,7 +35,130 @@
   padding: 0;
   font-family: "Montserrat Bold", sans-serif;
   font-weight: 600;
-  font-size: 44px;
-  line-height: 48px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 44px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+}
+
+.consultation__div {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.consultation__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 645px;
+    margin-bottom: 29px;
+  }
+}
+
+.consultation__lead {
+  font-family: "Monsterrat Light", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  height: 17px;
+  color: #808080;
+  border: 1px solid #bfbfbf;
+  box-sizing: border-box;
+  padding: 19px 18px;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    padding: 19px 18px;
+    height: 57px;
+    line-height: 26px;
+  }
+}
+
+.consultation__subtitle:nth-last-child(1) {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.consultation__subtitle:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.consultation__lead--texterea {
+  width: 100%;
+  height: 100px;
+
+  @media (min-width: @desktop-width) {
+    width: 645px;
+    height: 229px;
+  }
+}
+
+.consultation__required {
+  @media (min-width: @desktop-width) {
+    margin-left: 1056px;
+    margin-bottom: 30px;
+  }
+}
+
+.consultation__required--subtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.consultation__send {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.consultation__button {
+  font-family: "Montserrat Bold", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  line-height: 20px;
+  background: linear-gradient(270.12deg, rgba(203, 35, 35, 0.74) -0.24%, rgba(170, 65, 65, 0) 98.72%), #a61744;
+  padding: 27px;
+  width: 238px;
+  border: 2px solid #a61744;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 36px;
+}
+
+.consultation__approval {
+  margin: 0;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 458px;
+    font-size: 18px;
+    line-height: 26px;
+  }
 }

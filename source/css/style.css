@@ -39,7 +39,7 @@ img {
 @font-face {
   font-family: "Montserrat Bold";
   src: url("../font/Montserrat-Bold.woff2") format("woff2"), url("../font/Montserrat-Bold.woff") format("woff");
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -51,7 +51,7 @@ img {
 @font-face {
   font-family: "Montserrat Medium";
   src: url("../font/Montserrat-Medium.woff2") format("woff2"), url("../font/Montserrat-Medium.woff") format("woff");
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -298,7 +298,8 @@ img {
 }
 @media (min-width: 1680px) {
   .project-detail {
-    padding-bottom: 35px;
+    padding-top: 46px;
+    padding-bottom: 37px;
   }
 }
 .project-detail__complex {
@@ -379,11 +380,13 @@ img {
 }
 @media (min-width: 768px) {
   .information__container {
+    padding: 0 43px;
     padding-bottom: 28px;
   }
 }
 @media (min-width: 1680px) {
   .information__container {
+    padding: 0 41px;
     padding-bottom: 38px;
   }
 }
@@ -518,6 +521,46 @@ img {
   .location {
     padding-top: 155px;
     padding-bottom: 80px;
+    padding-left: 117px;
+  }
+}
+.location::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/union.svg);
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .location::before {
+    right: 9px;
+    top: 15px;
+    width: 121px;
+    height: 620px;
+  }
+}
+@media (min-width: 1680px) {
+  .location::before {
+    right: 9px;
+    top: 34px;
+  }
+}
+.location::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/union3.svg);
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .location::after {
+    right: 9px;
+    bottom: 45px;
+    width: 121px;
+    height: 385px;
+  }
+}
+@media (min-width: 1680px) {
+  .location::after {
+    display: none;
   }
 }
 .location__container {
@@ -525,6 +568,12 @@ img {
   flex-direction: column;
   font-size: 14px;
   line-height: 20px;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .location__container {
+    padding: 0 43px;
+  }
 }
 @media (min-width: 1680px) {
   .location__container {
@@ -532,17 +581,36 @@ img {
   }
 }
 .location__park {
+  position: relative;
   order: 2;
   padding-bottom: 14px;
   margin-bottom: 14px;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .location__park {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1680px) {
   .location__park {
     order: 1;
     margin-right: 131px;
-    margin-left: 57px;
     width: 590px;
     height: 464px;
+  }
+}
+.location__park::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/union6.svg);
+}
+@media (min-width: 768px) {
+  .location__park::before {
+    width: 139px;
+    height: 139px;
+    right: 277px;
+    top: 157px;
   }
 }
 .location__info {
@@ -559,122 +627,444 @@ img {
 .location__title {
   font-family: "Montserrat Bold", sans-serif;
   margin: 0;
-  font-size: 44px;
-  line-height: 48px;
+  font-size: 30px;
+  line-height: 34px;
   font-weight: 600;
   color: #d0ae85;
   margin-bottom: 25px;
 }
+@media (min-width: 768px) {
+  .location__title {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
 .location__subtitle {
-  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
   margin: 0;
   margin-bottom: 25px;
 }
+@media (min-width: 768px) {
+  .location__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .contacts {
-  display: flex;
-  flex-direction: row;
-  padding-top: 71px;
+  position: relative;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .contacts {
+    padding: 0 43px;
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1680px) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    padding-top: 71px;
+    padding-left: 106px;
+  }
+}
+@media (min-width: 1680px) {
+  .contacts::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../img/union2.svg);
+    width: 463px;
+    height: 157px;
+    left: 46px;
+    bottom: 5px;
+    z-index: -1;
+  }
 }
 .contacts__container {
+  position: relative;
   margin: 0;
-  margin-right: 59px;
   padding: 0;
+}
+@media (min-width: 1680px) {
+  .contacts__container {
+    margin-right: 59px;
+  }
+}
+@media (min-width: 1680px) {
+  .contacts__container::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../img/union4.svg);
+    left: -61px;
+    top: 20px;
+    width: 44px;
+    height: 58px;
+  }
 }
 .contacts__title {
   font-family: "Montserrat Bold", sans-serif;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 34px;
-  margin-bottom: 16px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (min-width: 1680px) {
+  .contacts__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 16px;
+  }
 }
 .contacts__place {
   margin: 0;
-  width: 1176px;
-  height: 550px;
   padding: 0;
 }
-.contacts__place img {
-  width: 1176px;
-  height: 550px;
+@media (min-width: 1680px) {
+  .contacts__place {
+    width: 1176px;
+    height: 550px;
+  }
+}
+@media (min-width: 1680px) {
+  .contacts__place img {
+    width: 1176px;
+    height: 550px;
+  }
 }
 .contacts__telephone {
   color: #ffffff;
   font-family: "Montserrat Bold", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 34px;
   text-decoration: none;
+  font-weight: 600;
+}
+@media (min-width: 1680px) {
+  .contacts__telephone {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 .contacts__subtitle {
   font-family: "Montserrat Light", sans-serif;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  width: 286px;
+  font-size: 15px;
+  line-height: 20px;
+}
+@media (min-width: 1680px) {
+  .contacts__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    width: 286px;
+  }
 }
 .infrastructure {
   display: flex;
-  flex-direction: row;
-  padding-top: 147px;
-  padding-bottom: 127px;
-  padding-left: 73px;
+  flex-direction: column;
   color: #101010;
+  width: 100%;
   background: radial-gradient(95.54% 242.06% at 69.1% -4.31%, rgba(255, 255, 255, 0.83) 21.73%, rgba(255, 255, 255, 0.14) 92.86%), #CFCFCF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .infrastructure {
+    padding-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+}
+@media (min-width: 1680px) {
+  .infrastructure {
+    flex-direction: row;
+    padding-top: 147px;
+    padding-bottom: 127px;
+    padding-left: 118px;
+    padding-bottom: 40px;
+  }
 }
 .infrastructure__list {
   margin: 0;
   padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style: none;
-  width: 505px;
-  margin-right: 234px;
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .infrastructure__list {
+    width: 600px;
+  }
+}
+@media (min-width: 1680px) {
+  .infrastructure__list {
+    width: 505px;
+    margin-right: 234px;
+  }
 }
 .infrastructure__item {
   margin-bottom: 29px;
 }
 .infrastructure__link {
   display: block;
-  width: 238px;
-  height: 110px;
+  width: 120px;
+  height: 60px;
 }
-.infrastructure__place {
-  width: 643px;
+@media (min-width: 768px) {
+  .infrastructure__link {
+    width: 250px;
+    height: 160px;
+  }
+}
+@media (min-width: 1680px) {
+  .infrastructure__link {
+    width: 238px;
+    height: 110px;
+  }
+}
+@media (min-width: 768px) {
+  .infrastructure__place {
+    width: 643px;
+  }
 }
 .infrastructure__title {
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat Bold", sans-serif;
   font-weight: 600;
-  font-size: 44px;
-  line-height: 48px;
-  margin-bottom: 33px;
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .infrastructure__title {
+    font-size: 44px;
+    line-height: 48px;
+    margin-bottom: 33px;
+  }
+}
+.infrastructure__subtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  .infrastructure__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.infrastructure__subtitle--nearby {
+  margin-bottom: 25px;
 }
 .page-footer {
-  padding-top: 19px;
-  padding-bottom: 17px;
-  display: grid;
-  grid-template-columns: 144px 235px;
-  -moz-column-gap: 1207px;
-       column-gap: 1207px;
-  font-size: 18px;
-  line-height: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #a4a4a4;
   background-color: #1b1b1d;
 }
-.page-footer__copyright {
-  padding-top: 22px;
+@media (min-width: 768px) {
+  .page-footer {
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+}
+@media (min-width: 1680px) {
+  .page-footer {
+    padding-top: 19px;
+    padding-bottom: 17px;
+  }
+}
+.page-footer--container {
+  font-size: 10px;
+  line-height: 14px;
+}
+@media (min-width: 768px) {
+  .page-footer--container {
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1680px) {
+  .page-footer--container {
+    display: grid;
+    grid-template-columns: 144px 235px;
+    -moz-column-gap: 1207px;
+         column-gap: 1207px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media (min-width: 768px) {
+  .page-footer__copyright {
+    padding-top: 17px;
+  }
+}
+@media (min-width: 1680px) {
+  .page-footer__copyright {
+    padding-top: 22px;
+  }
 }
 .consultation {
-  padding-top: 61px;
-  padding-bottom: 95px;
-  padding-left: 135px;
+  position: relative;
+}
+.consultation::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/union5.svg);
+  right: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 248px;
+  z-index: -1;
+}
+.consultation__container {
+  padding: 20px 20px;
+}
+@media (min-width: 768px) {
+  .consultation__container {
+    padding-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+}
+@media (min-width: 1680px) {
+  .consultation__container {
+    padding-top: 61px;
+    padding-bottom: 95px;
+    padding-left: 181px;
+    padding-right: 180px;
+  }
 }
 .consultation__title {
   margin: 0;
   padding: 0;
   font-family: "Montserrat Bold", sans-serif;
   font-weight: 600;
-  font-size: 44px;
-  line-height: 48px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .consultation__title {
+    font-size: 44px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+}
+.consultation__div {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1680px) {
+  .consultation__div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.consultation__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .consultation__subtitle {
+    width: 645px;
+    margin-bottom: 29px;
+  }
+}
+.consultation__lead {
+  font-family: "Monsterrat Light", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  height: 17px;
+  color: #808080;
+  border: 1px solid #bfbfbf;
+  box-sizing: border-box;
+  padding: 19px 18px;
+  width: 100%;
+}
+@media (min-width: 1680px) {
+  .consultation__lead {
+    padding: 19px 18px;
+    height: 57px;
+    line-height: 26px;
+  }
+}
+@media (min-width: 1680px) {
+  .consultation__subtitle:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+.consultation__subtitle:nth-child(4) {
+  margin-bottom: 0;
+}
+.consultation__lead--texterea {
+  width: 100%;
+  height: 100px;
+}
+@media (min-width: 1680px) {
+  .consultation__lead--texterea {
+    width: 645px;
+    height: 229px;
+  }
+}
+@media (min-width: 1680px) {
+  .consultation__required {
+    margin-left: 1056px;
+    margin-bottom: 30px;
+  }
+}
+.consultation__required--subtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1680px) {
+  .consultation__required--subtitle {
+    margin-bottom: 0;
+  }
+}
+.consultation__send {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1680px) {
+  .consultation__send {
+    flex-direction: row;
+  }
+}
+.consultation__button {
+  font-family: "Montserrat Bold", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  line-height: 20px;
+  background: linear-gradient(270.12deg, rgba(203, 35, 35, 0.74) -0.24%, rgba(170, 65, 65, 0) 98.72%), #a61744;
+  padding: 27px;
+  width: 238px;
+  border: 2px solid #a61744;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 36px;
+}
+.consultation__approval {
+  margin: 0;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (min-width: 1680px) {
+  .consultation__approval {
+    width: 458px;
+    font-size: 18px;
+    line-height: 26px;
+  }
 }

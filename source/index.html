@@ -86,7 +86,7 @@
       </section>
       <section class="information">
         <h2 class="visually-hidden">Информация о квартале</h2>
-        <div class="container information__container">
+        <div class="information__container">
           <ul class="information__list">
             <li class="information__item information__item--current">
               О проекте
@@ -113,7 +113,7 @@
       </section>
       <section class="location">
         <h2 class="visually-hidden">Расположение</h2>
-        <div class="container location__container">
+        <div class="location__container">
           <div class="location__park">
             <picture>
               <source media="(min-width: 1680px)" srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
@@ -135,7 +135,7 @@
           </div>
         </div>
       </section>
-      <section class="container contacts">
+      <section class="contacts">
         <div class="contacts__container">
           <div class="contacts__adress--complex">
             <h3 class="contacts__title">Комплекс</h3>
@@ -188,7 +188,7 @@
         </ul>
         <div class="infrastructure__place">
           <h3 class="infrastructure__title">Места поблизости</h3>
-          <p class="infrastructure__subtitle">
+          <p class="infrastructure__subtitle infrastructure__subtitle--nearby">
             Рядом с проектом существует разнообразная и насыщенная коммерческая и социальная инфраструктура. В городе Котельники расположены детские сады, школы, поликлиники, лицеи, спортивная школа олимпийского резерва «Союз», бассейн «Нева», экстрим-парк «Фристайл», магазины, кафе и рестораны.
           </p>
           <p class="infrastructure__subtitle">
@@ -196,43 +196,49 @@
           </p>
         </div>
       </section>
-      <section class="consultation container">
-        <h3 class="consultation__title">Записаться на консультацию</h3>
-        <form class="consultation__form" method="GET" action="./">
-          <div>
-            <p class="consultation__subtitle">
-              <label for="name" aria-label="введите имя"></label>
-              <input class="consultation__lead" id="name" type="text" name="name" placeholder="Имя">
-            </p>
-            <p class="consultation__subtitle">
-              <label for="tel" aria-label="введите номер телефона"></label>
-              <input class="consultation__lead" id="tel" type="tel" name="tel" placeholder="Телефон">
-            </p>
-            <p class="consultation__subtitle">
-              <label for="email" aria-label="введите адрес электронной почты"></label>
-              <input class="consultation__lead" id="email" type="email" name="email" placeholder="Email для ответа">
-            </p>
-          </div>
-          <div>
-            <p class="consultation__subtitle">
-              <label for="text" aria-label="Задайте свои вопросы"></label>
-              <textarea class="consultation__lead" id="text" name="text" placeholder="Ваши вопросы"></textarea>
-            </p>
-          </div>
-          <div class="consultation__required">
-            <p class="consultation__required--subtitle">Все поля обязательны для заполнения</p>
-          </div>
-          <div class="consultation__send">
-            <button class="consultation__button">Отправить</button>
-            <p class="consultation__approval">Нажимая «Отправить», я даю <a>согласие на обработку персональных данных</a></p>
-          </div>
-        </form>
+      <section class="consultation">
+        <div class="consultation__container">
+          <h3 class="consultation__title">Записаться на консультацию</h3>
+          <form class="consultation__form" method="GET" action="./">
+            <div class="consultation__div">
+              <div class="consultation__information">
+                <p class="consultation__subtitle">
+                  <label for="name" aria-label="введите имя"></label>
+                  <input class="consultation__lead" id="name" type="text" name="name" placeholder="Имя">
+                </p>
+                <p class="consultation__subtitle">
+                  <label for="tel" aria-label="введите номер телефона"></label>
+                  <input class="consultation__lead" id="tel" type="tel" name="tel" placeholder="Телефон">
+                </p>
+                <p class="consultation__subtitle">
+                  <label for="email" aria-label="введите адрес электронной почты"></label>
+                  <input class="consultation__lead" id="email" type="email" name="email" placeholder="Email для ответа">
+                </p>
+              </div>
+              <div class="consultation__questions">
+                <p class="consultation__subtitle">
+                  <label for="text" aria-label="Задайте свои вопросы"></label>
+                  <textarea class="consultation__lead consultation__lead--texterea" id="text" name="text" placeholder="Ваши вопросы"></textarea>
+                </p>
+              </div>
+            </div>
+            <div class="consultation__required">
+              <p class="consultation__required--subtitle">Все поля обязательны для заполнения</p>
+            </div>
+            <div class="consultation__send">
+              <button class="consultation__button">Отправить</button>
+              <p class="consultation__approval">Нажимая «Отправить», я даю <a>согласие на обработку персональных данных</a></p>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer class="page-footer container">
+    <footer class="page-footer">
+      <div class="container page-footer--container">
         <p class="page-footer__company">© «Русич» ,2018</p>
         <a class="page-footer__copyright">Создание сайта — Individ</a>
+      </div>
     </footer>
     <script src="js/main-nav.js"></script>
   </body>

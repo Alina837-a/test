@@ -1,49 +1,107 @@
 .contacts {
-  display: flex;
-  flex-direction: row;
-  padding-top: 71px;
+  position: relative;
+  padding: 0 20px;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 43px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 71px;
+    padding-left: 106px;
+  }
+}
+
+.contacts::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url(../../img/union2.svg);
+    width: 463px;
+    height: 157px;
+    left: 46px;
+    bottom: 5px;
+    z-index: -1;
+  }
 }
 
 .contacts__container {
+  position: relative;
   margin: 0;
-  margin-right: 59px;
   padding: 0;
+  @media (min-width: @desktop-width) {
+    margin-right: 59px;
+  }
+}
+
+.contacts__container::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url(../../img/union4.svg);
+    left: -61px;
+    top: 20px;
+    width: 44px;
+    height: 58px;
+  }
 }
 
 .contacts__title {
   font-family: "Montserrat Bold", sans-serif;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 34px;
-  margin-bottom: 16px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__place {
   margin: 0;
-  width: 1176px;
-  height: 550px;
   padding: 0;
+  @media (min-width: @desktop-width) {
+    width: 1176px;
+    height: 550px;
+  }
 }
 
 .contacts__place img {
-  width: 1176px;
-  height: 550px;
+  @media (min-width: @desktop-width) {
+    width: 1176px;
+    height: 550px;
+  }
 }
 
 .contacts__telephone {
   color: #ffffff;
   font-family: "Montserrat Bold", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 34px;
   text-decoration: none;
+  font-weight: 600;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 .contacts__subtitle {
   font-family: "Montserrat Light", sans-serif;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  width: 286px;
+  font-size: 15px;
+  line-height: 20px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 286px;
+  }
 }
 
