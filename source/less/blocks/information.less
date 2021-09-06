@@ -101,14 +101,35 @@
 .information__quarter {
   width: 100%;
   margin-bottom: 38px;
+  background-image: url("../img/project-mobile@1x.jpg");
+  padding-top: 258px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/project-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 48px;
+    padding-top: 623px;
+    background-image: url("../img/project-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("../img/project-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     order: 2;
     margin-bottom: 0;
+    background-image: url("../img/project-desktop@1x.jpg");
+    padding-top: 665px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/project-desktop@2x.jpg");
+    }
   }
 }
 

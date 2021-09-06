@@ -1,9 +1,32 @@
 .project {
+  padding-top: 215px;
   position: relative;
-}
+  background-image: url("../img/banner-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
 
-.project__banner {
-  width: 100%;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/banner-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/banner-tablet@1x.jpg");
+    padding-top: 392px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/banner-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/banner-desktop@1x.jpg");
+    padding-top: 600px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/banner-desktop@2x.jpg");
+    }
+  }
 }
 
 .project__sign {

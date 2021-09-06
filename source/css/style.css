@@ -264,10 +264,39 @@ img {
   }
 }
 .project {
+  padding-top: 215px;
   position: relative;
+  background-image: url("../img/banner-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
 }
-.project__banner {
-  width: 100%;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .project {
+    background-image: url("../img/banner-mobile@2x.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .project {
+    background-image: url("../img/banner-tablet@1x.jpg");
+    padding-top: 392px;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .project {
+    background-image: url("../img/banner-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1680px) {
+  .project {
+    background-image: url("../img/banner-desktop@1x.jpg");
+    padding-top: 600px;
+  }
+}
+@media (min-width: 1680px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1680px) and (min-resolution: 2dppx) {
+  .project {
+    background-image: url("../../img/banner-desktop@2x.jpg");
+  }
 }
 .project__sign {
   position: absolute;
@@ -370,7 +399,7 @@ img {
   position: absolute;
   width: 17px;
   height: 17px;
-  background-image: url(../../img/vector.svg);
+  background-image: url("../img/vector.svg");
   right: 10px;
   top: 8px;
 }
@@ -478,16 +507,40 @@ img {
 .information__quarter {
   width: 100%;
   margin-bottom: 38px;
+  background-image: url("../img/project-mobile@1x.jpg");
+  padding-top: 258px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .information__quarter {
+    background-image: url("../img/project-mobile@2x.jpg");
+  }
 }
 @media (min-width: 768px) {
   .information__quarter {
     margin-bottom: 48px;
+    padding-top: 623px;
+    background-image: url("../img/project-tablet@1x.jpg");
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .information__quarter {
+    background-image: url("../img/project-tablet@2x.jpg");
   }
 }
 @media (min-width: 1680px) {
   .information__quarter {
     order: 2;
     margin-bottom: 0;
+    background-image: url("../img/project-desktop@1x.jpg");
+    padding-top: 665px;
+  }
+}
+@media (min-width: 1680px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1680px) and (min-resolution: 2dppx) {
+  .information__quarter {
+    background-image: url("../img/project-desktop@2x.jpg");
   }
 }
 .information__subtitle {
@@ -527,7 +580,7 @@ img {
 .location::before {
   position: absolute;
   content: "";
-  background-image: url(../../img/union.svg);
+  background-image: url("../img/union.svg");
   z-index: 0;
 }
 @media (min-width: 768px) {
@@ -547,7 +600,7 @@ img {
 .location::after {
   position: absolute;
   content: "";
-  background-image: url(../../img/union3.svg);
+  background-image: url("../img/union3.svg");
   z-index: 0;
 }
 @media (min-width: 768px) {
@@ -603,7 +656,7 @@ img {
 .location__park::before {
   position: absolute;
   content: "";
-  background-image: url(../../img/union6.svg);
+  background-image: url("../img/union6.svg");
 }
 @media (min-width: 768px) {
   .location__park::before {
@@ -674,7 +727,7 @@ img {
   .contacts::before {
     position: absolute;
     content: "";
-    background-image: url(../../img/union2.svg);
+    background-image: url("../img/union2.svg");
     width: 463px;
     height: 157px;
     left: 46px;
@@ -696,7 +749,7 @@ img {
   .contacts__container::before {
     position: absolute;
     content: "";
-    background-image: url(../../img/union4.svg);
+    background-image: url("../img/union4.svg");
     left: -61px;
     top: 20px;
     width: 44px;
@@ -914,7 +967,7 @@ img {
 .consultation::before {
   position: absolute;
   content: "";
-  background-image: url(../../img/union5.svg);
+  background-image: url("../img/union5.svg");
   right: 0;
   bottom: 2px;
   width: 100%;
